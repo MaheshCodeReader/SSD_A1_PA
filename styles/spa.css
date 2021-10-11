@@ -1,181 +1,145 @@
 @import "basics.css";
 @import "educationtable.css";
-
-
-
-
-
-
-
-
-html, body, .container{
-	height: 100vh;
-	width: 100vw;
+html,
+body,
+.container {
+    height: 100vh;
+    width: 100vw;
 }
 
-
-
-html{
-	position: relative;
+html {
+    position: relative;
 }
 
-.container{
-	background-color: black;
-
-
-
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 5fr 80fr 5fr;
-}
-
-@media only screen and (max-width: 600px) {
-	.container{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 10fr 75fr 5fr;
-	}
-}
-
-.header-wrapper{
-
-	flex: 1;
-}
-
-.nav-wrapper{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: space-around;
-	align-items: center;
-
-
-	background-color: aliceblue;
-	height: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-	.nav-wrapper{
-		display: grid;
-
-		grid-template-rows: 1fr 1fr;
-		grid-template-columns: 1fr 1fr;
-	}
-}
-
-.nav-item{
-	font-size: 16px;
-	text-align: center	;
-
-
-	flex: 1;
-}
-
-.main-wrapper{
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-
-	flex: 1;
-
-	overflow-y: scroll;	
-}
-
-.main-wrapper .image-wrapper{
-	text-align: center;
-	margin: auto 0;
-}
-
-.profile-img{
-	height: 100%;
-	width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-  .main-wrapper {
-    /*color: lightblue;*/
-
+.container {
+    background-color: black;
     display: grid;
-	grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 80fr 5fr;
+}
 
-	flex: 1;
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10fr 75fr 5fr;
+    }
+}
 
-	overflow-y: scroll;	
+.header-wrapper {
+    flex: 1;
+}
 
-  }
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    height: 100%;
+}
 
-  .main-wrapper .image-wrapper{
-  	display: none;
-  }
+@media only screen and (max-width: 600px) {
+    .nav-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.nav-item {
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.main-wrapper .image-wrapper {
+    text-align: center;
+    margin: auto 0;
+}
+
+.profile-img {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-wrapper {
+        /*color: lightblue;*/
+        display: grid;
+        grid-template-columns: 1fr;
+        flex: 1;
+        overflow-y: scroll;
+    }
+    .main-wrapper .image-wrapper {
+        display: none;
+    }
 }
 
 .main-wrapper::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-.image-wrapper{
-	background-color: cyan;
-	/*overflow-y: scroll;*/
+.image-wrapper {
+    background-color: cyan;
+    /*overflow-y: scroll;*/
 }
 
-.content-wrapper{
-	background-color: gainsboro;
-	overflow-y: scroll;
-
-
+.content-wrapper {
+    background-color: gainsboro;
+    overflow-y: scroll;
 }
 
-
-
-
-
-.footer-wrapper{
-	display: flex;
-	/*justify-content: center;*/
-
-	flex-direction: row;
-	justify-content: center;
-	align-content: space-around;
-	align-items: center;
-
-	background-color: aliceblue;
+.footer-wrapper {
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
 }
 
-.footer-item{
-	font-size: 16px;
-	
-
-	text-align: center;
-
-
-	flex: 1;
+.footer-item {
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
 }
 
-
-.footer-item .git_linkedin_logos{
-	width: 40px;
+.footer-item .git_linkedin_logos {
+    width: 40px;
 }
-
-
 
 .home-content {
-	padding-top: 1rem;
-	margin-left: 2rem;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
-.home-content p{
-	margin: 1rem 0;
+.home-content p {
+    margin: 1rem 0;
+    font-family: 'Gochi Hand', cursive;
 }
 
-ul#interests{
-	list-style-type: none;
-	/*list-style: devanagari;*/
-	/*padding-left: rem;*/
+ul#interests {
+    list-style-type: none;
+    /*list-style: devanagari;*/
+    /*padding-left: rem;*/
 }
 
-
-a, a:hover, a:focus, a:active {
-	text-decoration: none;
-	color: inherit;
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
 }
