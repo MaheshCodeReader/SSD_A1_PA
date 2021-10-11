@@ -107,17 +107,29 @@ document.addEventListener("DOMContentLoaded", function() {
             <tbody>
                 <tr>
                     <th scope="row">Masters</th>
-                    <td><img alt="iiith logo" class="academy_img" src="images/iiit-new.png"></td>
+                    <td>
+                        <a target="_blank" href="https://www.iiit.ac.in">
+                        <img alt="iiith logo" class="academy_img" src="images/iiit-new.png">
+                        </a>
+                    </td>
                     <td>pursuing</td>
                 </tr>
                 <tr>
                     <th scope="row">Batchlers</th>
-                    <td><img alt="sggs logo" class="academy_img" src="images/sggs-logo.png"></td>
+                    <td>
+                    <a target="_blank" href="https://www.sggs.ac.in">
+                        <img alt="sggs logo" class="academy_img" src="images/sggs-logo.png">
+                    </a>
+                    </td>
                     <td>8.39 CGPA</td>
                 </tr>
                 <tr>
                     <th scope="row">HSC</th>
-                    <td><img alt="nvs logo" class="academy_img" src="images/nvs_logo.png"></td>
+                    <td>
+                        <a target="_blank" href="https://navodaya.gov.in">
+                            <img alt="nvs logo" class="academy_img" src="images/nvs_logo.png">
+                        </a>
+                    </td>
                     <td>76.92 %</td>
                 </tr>
                 <tr>
